@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+
+  "name": "Animal Testing Plugin",
+  "description": "Icon on products to show if it has been animal tested or not.",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "./images/icon.png",
+    "default_popup": "./popup.html"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["http://www.tesco.com/groceries/*", "https://www.tesco.com/groceries/*"],
+      "css": ["./styles/popup.css"],
+      "js": ["./scripts/jquery-3.1.1.min.js", "./scripts/script.js"]
+    }
+  ],
+
+  "permissions": [
+    "http://features.peta.org/"
+  ]
+}
