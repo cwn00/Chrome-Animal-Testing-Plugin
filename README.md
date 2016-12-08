@@ -1,1 +1,0 @@
-echo "# Chrome-Animal-Testing-Plugin" >> README.md
