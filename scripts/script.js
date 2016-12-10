@@ -40,7 +40,7 @@ xhr.send();
 
 // Compare two arrays and return boolean depending on if they contain a matching value
 var compareArrays = function ( haystack, arr ) {
-    return arr.some(function (v) {
-        return haystack.indexOf(v) >= 0;
+    return arr.some(function ( v ) {
+        return haystack.indexOf( v ) >= 0;
     });
 };
